@@ -18,7 +18,7 @@ export default function Register() {
               <Label htmlInput='email'>Email</Label>
               <Input type="email" name="email" id='email' placeholder="john@gmail.com"/>
           </div>
-          <div className='grid grid-cols-2 gap-3'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-4'>
             <div className='mb-5'>
                 <Label  htmlInput='password'>Password</Label>
                 <Input type="password" name="password"  id='password'/>
@@ -47,4 +47,4 @@ export default function Register() {
   </div>;
 }
 
-Register.getLayout = page => <Guest cardClassName="w-2/5" header="Register" title="register" children={page}/>
+Register.getLayout = page => <Guest cardClassName="lg:w-2/5" header="Register" title="register" children={page}/>
